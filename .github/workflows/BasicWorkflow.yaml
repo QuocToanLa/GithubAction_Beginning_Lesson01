@@ -1,5 +1,7 @@
 name: Basic Workflow
 on: workflow_dispatch
+env:
+  GLOBAL_VARIABLES: "Something just like this"
 jobs:
   testing:
     runs-on: ubuntu-latest
@@ -13,4 +15,11 @@ jobs:
         run: |
               echo "Hello Github"
               echo "This is for multiple-line shell commands"
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Execute Global Variables
+        run:
+              echo $env:GLOBAL_VARIABLES
+      
               
