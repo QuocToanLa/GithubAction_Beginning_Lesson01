@@ -1,0 +1,14 @@
+name: Basic Workflow
+on: workflow_dispatch
+jobs:
+  testing:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hello World 
+        run: 
+              echo "Hello World
+      - name: Hello Github
+        run: |
+              echo "Hello Github"
+              echo "This is for multiple-line shell commands"
+              
