@@ -4,6 +4,8 @@ jobs:
   testing:
     runs-on: ubuntu-latest
     steps:
+      - name: Using github actions
+        uses: actions/checkout@v3
       - name: Hello World 
         run: 
               echo "Hello World"
