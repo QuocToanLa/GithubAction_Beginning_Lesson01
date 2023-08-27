@@ -6,7 +6,7 @@ jobs:
     steps:
       - name: Hello World 
         run: 
-              echo "Hello World
+              echo "Hello World"
       - name: Hello Github
         run: |
               echo "Hello Github"
