@@ -16,6 +16,7 @@ jobs:
               echo "Hello Github"
               echo "This is for multiple-line shell commands"
   deploy:
+    needs: testing
     runs-on: ubuntu-latest
     steps:
       - name: Execute Global Variables
